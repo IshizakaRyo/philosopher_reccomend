@@ -1,0 +1,225 @@
+
+* 基本色　*/
+:root{
+  --main-color: #00BAFF;
+  --accent-color: #FF194E;
+  --dark-color: #0099FF;
+}
+
+
+/* 基本設定 */
+body {
+    margin: 0;
+    background-color: #00BAFF;
+    background-size: 50px 50px;
+    margin: 0 auto;
+    background-image: radial-gradient(#0099FF 15%, #00BAFF 20%);
+      
+}
+
+li {
+    list-style: none;
+}
+
+.question:nth-of-type(n+2) {
+    display: none;
+}
+
+
+/* heder: ヘッダーの設置 */
+header {
+background-color: var(--main-color);
+background-color: #00BAFF;
+}
+.headA {
+font-family: 'Chalkduster',sans-serif;
+font-size: 30px;
+text-decoration: none;
+}
+.headA:visited {
+    color: black;
+}
+.headB ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+.headB a {
+display: block;
+padding: 15px;
+color: inherit;
+font-size: 12px;
+text-decoration: none;
+}
+.headB a:hover {
+background-color: rgba( 0, 0, 0, 0.3);
+}
+  
+@media (min-width: 768px) {
+    header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .headB ul{
+        display: flex;
+      }
+  }
+  
+/* ----- スタート画面 ----- */
+/*-- スタートボタン --*/
+.startContainer {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.startLogoMain {
+    font-size: 80px;
+    margin-bottom: 0;
+    font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
+}
+.startLogoSub {
+    font-size: 20px;
+    background-color: #000;
+    color: #00BAFF;
+    font-family: 'Arial Black',sans-serif;
+}
+.startText {
+    font-size: 27px;
+    font-family: 'ヒラギノ丸ゴ ProN','Hiragino Maru Gothic ProN',sans-serif;
+}
+.startButtonWrapper {
+    margin-top: 70px;
+}
+.btn-flat-simple {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: #00BCD4;
+    background: #ECECEC;
+    transition: .4s;
+    font-size: 30px;
+    border-radius: 100px;
+  }
+.btn-flat-simple:hover {
+    background: #00bcd4;
+    color: white;
+}
+
+/* ----- 質問画面　結果画面 ----- */
+/* --- conA --- */
+.question{
+    max-width: 1000px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 30px;
+}
+.questionLogo {
+    font-size: 30px;
+    font-family: 'TsukuARdGothic-Regular',sans-serif;
+    color: #fff;
+    background-color: #0D1FFF;
+    border-radius: 0px 0px 30px 30px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.questionNumber {
+    font-size: 40px;
+    font-family: 'Gill Sans',sans-serif;
+}
+.questionContent {
+    font-size: 30px;
+    font-family: 'klee',sans-serif;
+}
+.answerWrapper {
+    margin-top: 100px;
+}
+.answerYes {
+    display: none;
+}
+.answerNo {
+    display: none;
+}
+.fa-caret-right {
+    font-size: 25px;
+    padding-right: 20px;
+}
+.labelYes {
+    font-size: 25px;
+    padding: 20px 60px;
+    border: solid 1px #000;
+    margin-right: 40px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+}
+.labelYes:hover .fa-caret-right {
+    color: #FF194E;
+}
+.labelNo {
+    font-size: 25px;
+    padding: 20px 60px;
+    border: solid 1px #000;
+    margin-left: 40px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+}
+.labelNo:hover .fa-caret-right {
+    color: #FF194E;
+}
+/*-- 結果ページへ --*/
+.getConclusion {
+    text-decoration: none;
+}
+.conclusionButtonWrapper {
+    margin-top: 180px; 
+}
+.btn-flat-vertical-border {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: #668ad8;
+    background: #e1f3ff;
+    transition: .4s;
+    font-size: 30px;
+  }
+  
+  .btn-flat-vertical-border:hover {
+    background: #668ad8;
+    color: #FFF;
+  }
+
+/* ----- 結果の表示 ----- */
+.kekka .container {
+    background-color: #fff;
+    max-width: 1200px;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 25px;
+}
+.kekkaName {
+    font-weight: bold;
+    font-size: 50px;
+}
+.kekkaImage img{
+    max-width: 375px;
+    max-height: 510px;
+}
