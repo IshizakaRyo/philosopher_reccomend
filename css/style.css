@@ -39,21 +39,6 @@ text-decoration: none;
 .headA:visited {
     color: black;
 }
-.headB ul {
-margin: 0;
-padding: 0;
-list-style: none;
-}
-.headB a {
-display: block;
-padding: 15px;
-color: inherit;
-font-size: 12px;
-text-decoration: none;
-}
-.headB a:hover {
-background-color: rgba( 0, 0, 0, 0.3);
-}
   
 @media (min-width: 768px) {
     header .container {
@@ -64,9 +49,6 @@ background-color: rgba( 0, 0, 0, 0.3);
       margin-left: auto;
       margin-right: auto;
     }
-    .headB ul{
-        display: flex;
-      }
   }
   
 /* ----- スタート画面 ----- */
