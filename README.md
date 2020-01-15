@@ -1,1 +1,6 @@
-recomend_philosoper
+質問に答えてオススメの哲学者を表示するというものです。
+表示結果にはデータベースから画像、名前、年代、主要著作を引っ張り出して表示させています。
+そしてYoutubeの関連動画も埋め込んでいます。
+
+使用言語
+HTML CSS JavaScript(jQuery) PHP MySOL
